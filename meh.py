@@ -15,7 +15,7 @@ def preprocess_text_simple(text):
     return text
 
 # Membaca dataset kursus
-df = pd.read_csv('/kaggle/input/linkedin-job-postings/postings.csv')
+df = pd.read_csv('postings.csv')
 
 # Menghapus duplikat berdasarkan 'job_posting_url'
 df = df.drop_duplicates(subset=['job_posting_url'])
